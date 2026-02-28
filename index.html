@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webster HackFest 26</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JS -->
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">HACKFEST 26</a>
+            <div class="nav-links">
+                <a href="#judging">Pillars</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#prizes">Prizes</a>
+                <a href="#faq">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- I. Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container section-fade">
+                <div class="hero-content">
+                    <div class="logo-bar top-logo-bar">
+                        <img src="assets/logos/sga.png" alt="SGA Logo" class="sponsor-logo sga-logo">
+                        <img src="assets/logos/csclub_logo.webp" alt="Computer Science Club Logo" class="sponsor-logo">
+                        <img src="assets/logos/game_design_guild_logo.jpg" alt="Game Design Club Logo"
+                            class="sponsor-logo">
+                        <img src="assets/logos/business_club_logo.png" alt="Business Club Logo" class="sponsor-logo">
+                    </div>
+
+                    <p class="hero-location">📍 KICKOFF @ LIBRARY CONFERENCE ROOM</p>
+                    <h1 class="hero-title">WEBSTER<br>HACKFEST 26</h1>
+                    <div class="terminal-text" id="typewriter"></div>
+
+                    <div class="prize-badge">
+                        <span class="badge-text">$1,200+ TOTAL PRIZE POOL</span>
+                    </div>
+
+                    <div class="cta-group">
+                        <a href="#" class="btn btn-primary">REGISTER NOW</a>
+                        <a href="#" class="btn btn-secondary">JOIN DISCORD</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Background effects -->
+            <div class="glow-bg"></div>
+            <div class="grid-overlay"></div>
+        </section>
+
+        <!-- II. Judging Criteria -->
+        <section id="judging" class="py-section">
+            <div class="container section-fade">
+                <h2 class="section-title">THE 300-POINT SCALE</h2>
+                <p class="section-desc">To win, teams must excel across all three disciplines. Every project is
+                    evaluated on a 300-point scale.</p>
+
+                <div class="pillar-grid">
+                    <!-- Technical -->
+                    <div class="pillar-card card-technical">
+                        <div class="pillar-header">
+                            <span class="pillar-points">100 POINTS</span>
+                            <h3>Technical Excellence</h3>
+                        </div>
+                        <div class="pillar-host">Host: Computer Science Club</div>
+                        <div class="pillar-body">
+                            <p>Evaluated on code architecture, complexity, performance, and stability. We look for
+                                efficient systems, clean logic, and robust technical implementation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Design -->
+                    <div class="pillar-card card-design">
+                        <div class="pillar-header">
+                            <span class="pillar-points">100 POINTS</span>
+                            <h3>Creative Design</h3>
+                        </div>
+                        <div class="pillar-host">Host: Game Design Club</div>
+                        <div class="pillar-body">
+                            <p>Evaluated on narrative cohesion, aesthetic quality, and "game feel" (UX). We look for
+                                immersive worlds, intuitive interfaces, and satisfying interaction loops.</p>
+                        </div>
+                    </div>
+
+                    <!-- Strategic -->
+                    <div class="pillar-card card-business">
+                        <div class="pillar-header">
+                            <span class="pillar-points">100 POINTS</span>
+                            <h3>Strategic Excellence</h3>
+                        </div>
+                        <div class="pillar-host">Host: Business Club</div>
+                        <div class="pillar-body">
+                            <p>Evaluated on market fit, monetization strategy, and the final pitch. We look for viable
+                                business models, clear value propositions, and professional presentation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- III. How It Works -->
+        <section id="how-it-works" class="py-section bg-alt">
+            <div class="container section-fade">
+                <h2 class="section-title">HOW IT WORKS</h2>
+
+                <div class="stages-grid">
+                    <div class="stage-card">
+                        <div class="stage-number">STAGE 01</div>
+                        <h3>THE INITIALIZATION</h3>
+                        <div class="stage-day">Friday Kickoff</div>
+                        <p>The journey begins at 5:30 PM. We reveal the Secret Theme, provide Problem Statements, and
+                            release the list of Diversifiers. This is where you find your crew, pick your challenge, and
+                            plan your strategy.</p>
+                    </div>
+
+                    <div class="stage-card">
+                        <div class="stage-number">STAGE 02</div>
+                        <h3>THE COMPILATION</h3>
+                        <div class="stage-day">The Weekend Sprint</div>
+                        <p>This is the core grind. Your team has until Sunday afternoon to develop a functional
+                            prototype (Solution or Game) <strong>AND</strong> a robust business model. Use this time to
+                            iterate, test, and polish both the tech and the pitch.</p>
+                    </div>
+
+                    <div class="stage-card">
+                        <div class="stage-number">STAGE 03</div>
+                        <h3>THE DEPLOYMENT</h3>
+                        <div class="stage-day">Sunday Finale</div>
+                        <p>At 2:30 PM, the code is locked. You will present your project to our panel of judges.</p>
+                    </div>
+                </div>
+
+                <div class="extra-mile-banner">
+                    <h4>🚀 THE EXTRA MILE</h4>
+                    <p>For teams ready to go pro, opt-in for the <strong>Investor Track Bonus</strong>—a high-stakes
+                        pitch session to real-world investors for potential funding.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- IV. Schedule -->
+        <section id="schedule" class="py-section">
+            <div class="container section-fade">
+                <h2 class="section-title">THE WEEKEND</h2>
+
+                <div class="timeline">
+                    <!-- Friday -->
+                    <div class="timeline-day">FRIDAY | KICKOFF</div>
+                    <div class="timeline-item right">
+                        <div class="time-block">5:30 PM</div>
+                        <div class="timeline-content">
+                            <h4>Opening Ceremony & Theme Reveal</h4>
+                            <p class="location-tag">@ Library Conference Room</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="time-block">7:00 PM</div>
+                        <div class="timeline-content">
+                            <h4>Team Formation & Discord Onboarding</h4>
+                        </div>
+                    </div>
+
+                    <!-- Saturday -->
+                    <div class="timeline-day">SATURDAY | THE BUILD</div>
+                    <div class="timeline-item right">
+                        <div class="time-block">9:00 AM</div>
+                        <div class="timeline-content">
+                            <h4>Doors Open</h4>
+                            <p class="location-tag">@ EAB First-Floor Classrooms</p>
+                            <p class="time-note">Optional Teamwork Spaces: Sverdrup (Pending Verification).</p>
+                        </div>
+                    </div>
+
+                    <!-- Sunday -->
+                    <div class="timeline-day">SUNDAY | SHOWCASE</div>
+                    <div class="timeline-item right">
+                        <div class="time-block">2:30 PM</div>
+                        <div class="timeline-content">
+                            <h4>Hard Deadline for Submissions</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="time-block">2:30 PM – 5:00 PM</div>
+                        <div class="timeline-content">
+                            <h4>Judging Phase & Demo Gallery</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="time-block">5:30 PM</div>
+                        <div class="timeline-content">
+                            <h4>Closing Ceremony & Awards</h4>
+                            <p class="location-tag">@ Sverdrup 101</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- V. Prizes -->
+        <section id="prizes" class="py-section bg-alt">
+            <div class="container section-fade">
+                <h2 class="section-title">PRIZES</h2>
+
+                <div class="grand-prix-card">
+                    <div class="prix-label">OVERALL EXCELLENCE</div>
+                    <h3>The Grand Prix</h3>
+                    <div class="prix-amount">$500</div>
+                </div>
+
+                <div class="prize-grid">
+                    <div class="prize-card">
+                        <h4>The Investor’s Choice</h4>
+                        <div class="prize-category">Most Market Ready</div>
+                        <div class="prize-amount">$175</div>
+                    </div>
+                    <div class="prize-card">
+                        <h4>Technical Excellence</h4>
+                        <div class="prize-category">Best Implementation</div>
+                        <div class="prize-amount">$175</div>
+                    </div>
+                    <div class="prize-card">
+                        <h4>Narrative & Art</h4>
+                        <div class="prize-category">Best World-Building & Design</div>
+                        <div class="prize-amount">$175</div>
+                    </div>
+                    <div class="prize-card">
+                        <h4>Business Innovation</h4>
+                        <div class="prize-category">Best Strategy/Pitch</div>
+                        <div class="prize-amount">$175</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VI. FAQ -->
+        <section id="faq" class="py-section">
+            <div class="container section-fade">
+                <h2 class="section-title">FAQs</h2>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What exactly is a Hackathon?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>It's an invention marathon! A hackathon is a timed, high-energy event where people
+                                collaborate to build, design, and launch creative technical projects—whether that's a
+                                disruptive app, an immersive game, or an innovative business idea—from scratch to
+                                prototype in a single weekend.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Where are we working?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You are free to work from wherever you’d like. Saturday is centered in EAB 1st floor,
+                                with potential additional space in Sverdrup.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Will there be food and drinks?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! We’ve got you covered with meals, snacks, coffee, and refreshments.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do I have to stay at the venue the entire 36 hours?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nope! You’re free to work from anywhere, but must be present for Opening, Judging, and
+                                Closing.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            How do I find a team?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Use the #find-a-team channel in our Discord server!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What is the AI Policy?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Use of AI is permitted, but all instances must be cited (Model + Use Case).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logos">
+                <img src="assets/logos/sga.png" alt="SGA Logo" class="sga-logo">
+                <img src="assets/logos/csclub_logo.webp" alt="Computer Science Club Logo">
+                <img src="assets/logos/game_design_guild_logo.jpg" alt="Game Design Club Logo">
+                <img src="assets/logos/business_club_logo.png" alt="Business Club Logo">
+            </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Discord">Discord</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 Webster University CS Club. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
