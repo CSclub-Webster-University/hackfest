@@ -74,11 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // 4. Hero Typewriter Effect
     const typeWriterEl = document.getElementById('typewriter');
     const phrases = [
-        "> THEME REVEAL IN T-MINUS 120 HOURS...",
         "> INITIATING TEAM BUILDER PROTOCOL...",
         "> VERIFYING INNOVATION DRIVE...",
         "> $1200_PRIZE_POOL.EXE LOADED.",
-        "> SYSTEM STATUS: READY TO HACK."
+        "> STOCKING UP ON CAFFEINE...",
+        "> SYSTEM STATUS: READY FOR HACKFEST."
     ];
     let phraseIndex = 0;
     let charIndex = 0;
