@@ -990,6 +990,24 @@ h3,
   line-height: 1.7;
 }
 
+/* VII. Registration Form */
+.form-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--clr-card);
+  border: 1px solid var(--clr-gray-dark);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.form-container iframe {
+  width: 100%;
+  min-height: 480px;
+  display: block;
+}
+
 /* Footer */
 footer {
   background-color: #050510;
