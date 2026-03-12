@@ -867,12 +867,12 @@ h3,
 .prize-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .prize-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
