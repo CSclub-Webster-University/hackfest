@@ -801,6 +801,66 @@ h3,
   font-style: italic;
 }
 
+.session-details {
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--clr-gray-dark);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.session-details summary {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--clr-gold);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s ease;
+}
+
+.session-details summary::before {
+  content: '▶';
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+}
+
+.session-details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.session-details summary:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.details-content {
+  padding: 15px;
+  border-top: 1px solid var(--clr-gray-dark);
+  font-size: 0.9rem;
+  color: var(--clr-gray);
+  line-height: 1.6;
+}
+
+.speaker-info {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.speaker-info strong {
+  color: var(--clr-white);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.speaker-info span {
+  display: block;
+  font-size: 0.85rem;
+}
+
 /* V. Prizes */
 .grand-prix-card {
   background: linear-gradient(135deg, var(--clr-card), rgba(245, 183, 6, 0.1));
