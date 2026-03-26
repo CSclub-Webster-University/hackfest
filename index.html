@@ -27,9 +27,12 @@
         <div class="nav-container">
             <a href="#hero" class="nav-logo">HACKFEST 26</a>
             <div class="nav-links">
-                <a href="#judging">Pillars</a>
+                <a href="#pillars">Pillars</a>
                 <a href="#how-it-works">How It Works</a>
                 <a href="#schedule">Schedule</a>
+                <a href="#challenges">Challenges</a>
+                <a href="#resources">Resources</a>
+                <a href="#judging">Judging</a>
                 <a href="#prizes">Prizes</a>
                 <a href="#faq">FAQ</a>
             </div>
@@ -70,8 +73,8 @@
             <div class="grid-overlay"></div>
         </section>
 
-        <!-- II. Judging Criteria -->
-        <section id="judging" class="py-section">
+        <!-- II. Judging Pillars -->
+        <section id="pillars" class="py-section">
             <div class="container section-fade">
                 <h2 class="section-title">THE 300-POINT SCALE</h2>
                 <p class="section-desc">To win, teams must excel across all three disciplines. Every project is
@@ -267,15 +270,16 @@
                         </div>
                     </div>
 
-                    <!-- Sunday -->
-                    <div class="timeline-day">SUNDAY 29 MARCH</div>
                     <div class="timeline-item right">
-                        <div class="time-block">12:00 AM</div>
+                        <div class="time-block">11:59 p.m.</div>
                         <div class="timeline-content">
                             <h4>Trial Submission</h4>
-                            <p class="time-note">To make sure everything works</p>
+                            <p class="time-note">To make sure the testing platform works as intended</p>
                         </div>
                     </div>
+
+                    <!-- Sunday -->
+                    <div class="timeline-day">SUNDAY 29 MARCH</div>
                     <div class="timeline-item left">
                         <div class="time-block">2:30 PM</div>
                         <div class="timeline-content">
@@ -320,7 +324,379 @@
             </div>
         </section>
 
-        <!-- V. Prizes -->
+        <!-- V. Challenges -->
+        <section id="challenges" class="py-section bg-alt">
+            <div class="container section-fade">
+                <h2 class="section-title">THE CHALLENGE</h2>
+
+                <!-- Locked Overlay -->
+                <div id="challenges-locked" class="challenge-locked">
+                    <div class="lock-icon">🔒</div>
+                    <p class="lock-title">THEME LOCKED</p>
+                    <p class="lock-desc">The theme will be revealed at the Opening Ceremony</p>
+                    <p class="lock-time">Friday, March 27 at 5:45 PM</p>
+                    <div class="lock-countdown" id="lock-countdown">-- : -- : --</div>
+                </div>
+
+                <!-- Actual Content (hidden until reveal time) -->
+                <div id="challenges-content" class="challenges-content" style="display:none;">
+                    <div class="theme-banner">
+                        <p class="theme-label">THIS YEAR'S THEME</p>
+                        <h3 class="theme-title">Sustainability &amp; The Future</h3>
+                        <p class="theme-desc">Teams can choose one of the prompts below to solve, or use them as inspiration to define their own problem within the theme.</p>
+                    </div>
+
+                    <div class="prompts-grid">
+                        <!-- Section A -->
+                        <div class="prompt-section">
+                            <h4 class="prompt-section-title"><span class="prompt-tag tag-a">SECTION A</span> Broad &amp; Vague</h4>
+                            <p class="prompt-section-desc">Creative freedom — interpret the theme however you see fit.</p>
+                            <ol class="prompt-list">
+                                <li><strong>"The Last Battery"</strong> – In a future where energy is the rarest resource, how do people live, trade, and survive?</li>
+                                <li><strong>"Nature Reclaims the Server"</strong> – Build something that explores the intersection of high-technology and organic growth.</li>
+                                <li><strong>"The Weight of a Click"</strong> – Every digital action has a physical cost. Make that cost visible, impactful, or part of a world-building mechanic.</li>
+                                <li><strong>"Generation 100"</strong> – Design a system or story that focuses on how actions today affect people living exactly 100 years from now.</li>
+                                <li><strong>"The Silent Forecast"</strong> – Address the "invisible" data of climate change. How can we visualize or interact with the environmental impact we cannot see?</li>
+                                <li><strong>"Digital Architecture"</strong> – Build a framework or world where digital structures are not permanent but grow, evolve, and decay like biological organisms.</li>
+                                <li><strong>"Echoes of the Anthropocene"</strong> – Focus on the "artifacts" we leave behind. Create a project centered on the repurposing of human-made ruins in a post-sustainability world.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Section B -->
+                        <div class="prompt-section">
+                            <h4 class="prompt-section-title"><span class="prompt-tag tag-b">SECTION B</span> Targeted &amp; Specific</h4>
+                            <p class="prompt-section-desc">Focused solutions with clear technical or business angles.</p>
+                            <ol class="prompt-list">
+                                <li><span class="discipline-badge badge-csc">CSC</span><span class="discipline-badge badge-biz">BIZ</span> <strong>The Ghost Energy Solution:</strong> Identify and "gamify" the reduction of standby power in residential or campus buildings.</li>
+                                <li><span class="discipline-badge badge-gd">GD</span> <strong>The Micro-Climate Simulator:</strong> Create an experience that teaches users about the delicate balance of a specific local ecosystem through direct interaction.</li>
+                                <li><span class="discipline-badge badge-biz">BIZ</span><span class="discipline-badge badge-csc">CSC</span> <strong>The Circular Campus:</strong> Develop a platform centered around a "Zero-Waste" inventory system where items must be repaired or traded.</li>
+                                <li><strong>The Transparent Supply Chain:</strong> Solve the problem of "Greenwashing." Create a way for consumers to verify the actual environmental impact of a product.</li>
+                                <li><span class="discipline-badge badge-csc">CSC</span> <strong>The Low-Power Web:</strong> Build a functional tool that helps users browse the web using the absolute minimum amount of server energy possible.</li>
+                                <li><span class="discipline-badge badge-csc">CSC</span><span class="discipline-badge badge-biz">BIZ</span> <strong>The Smart Grid Neighborhood:</strong> Develop a peer-to-peer energy sharing dashboard that allows neighbors to trade excess solar or wind power locally.</li>
+                                <li><span class="discipline-badge badge-csc">CSC</span> <strong>E-Waste Lifecycle Optimizer:</strong> Build a tool that scans hardware components to identify their remaining lifespan and connects users to recycling centers.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- Diversifiers -->
+                    <div class="diversifiers-section">
+                        <h3 class="diversifiers-title">DIVERSIFIERS</h3>
+                        <p class="diversifiers-desc">Optional bonus challenges. Points are added on top of your 300-point total. You must declare your chosen diversifiers during your final Sunday pitch.</p>
+
+                        <div class="diversifiers-list">
+                            <details class="diversifier-level">
+                                <summary>
+                                    <span class="level-label">Level 1 — The Basics</span>
+                                    <span class="level-points">+1 Point Each</span>
+                                </summary>
+                                <div class="diversifier-grid">
+                                    <div class="diversifier-card"><strong>The Eco-Aesthetic</strong><p>Incorporate a color palette or visual motif inspired by a specific, real-world endangered biome.</p></div>
+                                    <div class="diversifier-card"><strong>Biomimicry Basics</strong><p>Name your project, characters, variables, or business tiers entirely after local flora and fauna.</p></div>
+                                    <div class="diversifier-card"><strong>The Ripple Effect</strong><p>Every major action the user takes must visibly or audibly trigger a minor change in a completely different part of the system or UI.</p></div>
+                                    <div class="diversifier-card"><span class="discipline-badge badge-csc">CSC</span><span class="discipline-badge badge-gd">GD</span> <strong>Dark Mode Default</strong><p>To conserve screen energy, your application or game must default to a dark mode.</p></div>
+                                    <div class="diversifier-card"><span class="discipline-badge badge-biz">BIZ</span> <strong>The Charitable Cut</strong><p>Your business plan must explicitly map how a percentage of profits directly funds a verified environmental initiative.</p></div>
+                                    <div class="diversifier-card"><strong>"Reduce, Reuse, Recycle"</strong><p>Use at least one major open-source asset or dataset, and explicitly credit it in your pitch.</p></div>
+                                </div>
+                            </details>
+
+                            <details class="diversifier-level">
+                                <summary>
+                                    <span class="level-label">Level 2 — Moderate Constraints</span>
+                                    <span class="level-points">+2 Points Each</span>
+                                </summary>
+                                <div class="diversifier-grid">
+                                    <div class="diversifier-card"><strong>Nature's Metronome</strong><p>The pacing or timing of your solution/game must be tied to a natural real-world cycle (e.g., day/night, tides).</p></div>
+                                    <div class="diversifier-card"><strong>The Power of One</strong><p>Contrast the impact of a single individual's choices against a massive system or corporation.</p></div>
+                                    <div class="diversifier-card"><strong>Sunset Clause</strong><p>The project must have a built-in "end of life" state (e.g., features that auto-delete after their useful lifespan).</p></div>
+                                    <div class="diversifier-card"><span class="discipline-badge badge-gd">GD</span><span class="discipline-badge badge-csc">CSC</span> <strong>Asset Recycling</strong><p>Repurpose the exact same visual asset in at least three completely different, creative ways.</p></div>
+                                    <div class="diversifier-card"><span class="discipline-badge badge-biz">BIZ</span> <strong>The "Paperless" Pitch</strong><p>Your Sunday business pitch must be presented without any text on the slides—only images and graphs.</p></div>
+                                    <div class="diversifier-card"><span class="discipline-badge badge-csc">CSC</span> <strong>Low-Bandwidth Mode</strong><p>Your application must include a toggle that drastically reduces data usage.</p></div>
+                                </div>
+                            </details>
+
+                            <details class="diversifier-level">
+                                <summary>
+                                    <span class="level-label">Level 3 — The Challengers</span>
+                                    <span class="level-points">+3 Points Each</span>
+                                </summary>
+                                <div class="diversifier-grid">
+                                    <div class="diversifier-card"><strong>"One Man's Trash..."</strong><p>Make "upcycling" the central mechanic of your code, narrative, and market strategy.</p></div>
+                                    <div class="diversifier-card"><strong>Symbiosis</strong><p>The core loop requires two users/players to cooperate simultaneously; it cannot be played alone.</p></div>
+                                    <div class="diversifier-card"><strong>The Butterfly Effect</strong><p>A choice made in the first 60 seconds must drastically alter the final output or ending.</p></div>
+                                    <div class="diversifier-card"><span class="discipline-badge badge-biz">BIZ</span> <strong>The Circular Economy</strong><p>Your model cannot rely on buying "new" things. Users must trade, repair, or upcycle.</p></div>
+                                    <div class="diversifier-card"><span class="discipline-badge badge-csc">CSC</span> <strong>Carbon Footprint Tracker</strong><p>Implement a functional backend feature that calculates the simulated "carbon footprint" of user actions.</p></div>
+                                    <div class="diversifier-card"><span class="discipline-badge badge-gd">GD</span> <strong>Show, Don't Tell</strong><p>Convey the theme of sustainability entirely through mechanics. Zero text or dialogue allowed.</p></div>
+                                </div>
+                            </details>
+
+                            <details class="diversifier-level">
+                                <summary>
+                                    <span class="level-label">Level 4 — Advanced Engineering</span>
+                                    <span class="level-points">+4 Points Each</span>
+                                </summary>
+                                <div class="diversifier-grid">
+                                    <div class="diversifier-card"><strong>Degrowth</strong><p>As the user progresses, the interface or gameplay must become simpler rather than scaling up in complexity.</p></div>
+                                    <div class="diversifier-card"><strong>The 100-Year Plan</strong><p>The logic, mechanics, or business model must explicitly account for the passage of a century.</p></div>
+                                    <div class="diversifier-card"><span class="discipline-badge badge-csc">CSC</span> <strong>Zero-Waste Codebase</strong><p>No dead code, no unused assets, no console errors, and total project size under 50MB.</p></div>
+                                    <div class="diversifier-card"><span class="discipline-badge badge-biz">BIZ</span><span class="discipline-badge badge-csc">CSC</span> <strong>Local-First Architecture</strong><p>Prioritize local offline functionality or peer-to-peer connection to reduce server reliance.</p></div>
+                                    <div class="diversifier-card"><span class="discipline-badge badge-gd">GD</span> <strong>The Ephemeral UI</strong><p>No permanent HUD. Information must be conveyed organically through the environment.</p></div>
+                                </div>
+                            </details>
+
+                            <details class="diversifier-level level-iron">
+                                <summary>
+                                    <span class="level-label">⚔️ Level 5 — The Iron Tier</span>
+                                    <span class="level-points">+5 Points Each</span>
+                                </summary>
+                                <div class="diversifier-grid">
+                                    <div class="diversifier-card"><strong>Organic Intelligence (The "No AI" Run)</strong><p>Absolutely zero use of Generative AI for code, art, text, or business ideation. 100% human-crafted.</p></div>
+                                    <div class="diversifier-card"><strong>The Analog Fallback</strong><p>Your digital solution must be accompanied by a fully functional, physical, non-digital version (e.g., a board game).</p></div>
+                                    <div class="diversifier-card"><strong>Total Transparency</strong><p>Every background calculation or business fee must always be fully visible to the user on the main screen.</p></div>
+                                    <div class="diversifier-card"><span class="discipline-badge badge-csc">CSC</span> <strong>The E-Waste Savior</strong><p>Project must run flawlessly under extreme low-memory/low-CPU constraints (e.g., 512MB RAM restriction).</p></div>
+                                    <div class="diversifier-card"><strong>The One-Input Constraint</strong><p>Entire project must be navigable/playable using only a single input method (e.g., one button).</p></div>
+                                    <div class="diversifier-card"><span class="discipline-badge badge-biz">BIZ</span> <strong>The True Cost</strong><p>Your model must mathematically prove how the business achieves "Net Zero" carbon output, accounting for wattage and manufacturing.</p></div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VI. Resources -->
+        <section id="resources" class="py-section">
+            <div class="container section-fade">
+                <h2 class="section-title">RESOURCES</h2>
+                <p class="section-desc">Everything you need to build fast. Bookmark this page before the hackathon starts.</p>
+
+                <div class="resources-grid">
+                    <!-- GitHub Student Pack — Featured -->
+                    <div class="resource-card resource-card-featured">
+                        <div class="resource-card-header">
+                            <span class="resource-icon">⭐</span>
+                            <h3>GitHub Student Developer Pack</h3>
+                        </div>
+                        <p class="resource-card-desc">The Holy Grail. If you only sign up for one thing, make it this. Unlocks thousands of dollars in tools instantly — Copilot, Namecheap domains, $100 Azure credits, JetBrains IDEs, DigitalOcean, and more.</p>
+                        <p class="resource-req">Requires a valid student ID or <code>.edu</code> email.</p>
+                        <div class="resource-links">
+                            <a href="https://education.github.com/pack" target="_blank" rel="noopener noreferrer" class="resource-link">education.github.com/pack →</a>
+                        </div>
+                    </div>
+
+                    <!-- Hosting & Deployment -->
+                    <div class="resource-card">
+                        <div class="resource-card-header">
+                            <span class="resource-icon">🚀</span>
+                            <h3>Hosting &amp; Deployment</h3>
+                        </div>
+                        <p class="resource-card-desc">Deploy from a Git repo in minutes. No server config needed.</p>
+                        <div class="resource-subgroup">
+                            <p class="resource-subgroup-label">Frontend &amp; Static</p>
+                            <div class="resource-links">
+                                <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" class="resource-link">Vercel</a>
+                                <a href="https://netlify.com" target="_blank" rel="noopener noreferrer" class="resource-link">Netlify</a>
+                                <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer" class="resource-link">GitHub Pages</a>
+                            </div>
+                        </div>
+                        <div class="resource-subgroup">
+                            <p class="resource-subgroup-label">Backend &amp; Full Stack</p>
+                            <div class="resource-links">
+                                <a href="https://render.com" target="_blank" rel="noopener noreferrer" class="resource-link">Render</a>
+                                <a href="https://railway.app" target="_blank" rel="noopener noreferrer" class="resource-link">Railway</a>
+                                <a href="https://fly.io" target="_blank" rel="noopener noreferrer" class="resource-link">Fly.io</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & ML -->
+                    <div class="resource-card">
+                        <div class="resource-card-header">
+                            <span class="resource-icon">🤖</span>
+                            <h3>AI &amp; Machine Learning</h3>
+                        </div>
+                        <p class="resource-card-desc">Free models and APIs to accelerate your build.</p>
+                        <div class="resource-links">
+                            <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer" class="resource-link">GitHub Copilot</a>
+                            <a href="https://huggingface.co" target="_blank" rel="noopener noreferrer" class="resource-link">Hugging Face</a>
+                            <a href="https://aistudio.google.com" target="_blank" rel="noopener noreferrer" class="resource-link">Google Gemini API</a>
+                            <a href="https://groq.com" target="_blank" rel="noopener noreferrer" class="resource-link">Groq</a>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="resource-card">
+                        <div class="resource-card-header">
+                            <span class="resource-icon">🗄️</span>
+                            <h3>Databases</h3>
+                        </div>
+                        <p class="resource-card-desc">Production-grade databases with generous free tiers.</p>
+                        <div class="resource-links">
+                            <a href="https://supabase.com" target="_blank" rel="noopener noreferrer" class="resource-link">Supabase</a>
+                            <a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer" class="resource-link">Firebase</a>
+                            <a href="https://mongodb.com/atlas" target="_blank" rel="noopener noreferrer" class="resource-link">MongoDB Atlas</a>
+                            <a href="https://neon.tech" target="_blank" rel="noopener noreferrer" class="resource-link">Neon</a>
+                        </div>
+                    </div>
+
+                    <!-- Game Design Assets -->
+                    <div class="resource-card">
+                        <div class="resource-card-header">
+                            <span class="resource-icon">🎮</span>
+                            <h3>Game Design Assets</h3>
+                        </div>
+                        <p class="resource-card-desc">3D models, sound effects, music, and more — all free or affordable.</p>
+                        <div class="resource-links">
+                            <a href="https://sketchfab.com/feed" target="_blank" rel="noopener noreferrer" class="resource-link">Sketchfab</a>
+                            <a href="https://assetstore.unity.com/" target="_blank" rel="noopener noreferrer" class="resource-link">Unity Asset Store</a>
+                            <a href="https://www.fab.com/" target="_blank" rel="noopener noreferrer" class="resource-link">Fab</a>
+                            <a href="https://freesound.org/" target="_blank" rel="noopener noreferrer" class="resource-link">FreeSound</a>
+                            <a href="https://www.bensound.com/" target="_blank" rel="noopener noreferrer" class="resource-link">BenSound</a>
+                        </div>
+                    </div>
+
+                    <!-- Design & Utilities -->
+                    <div class="resource-card">
+                        <div class="resource-card-header">
+                            <span class="resource-icon">🛠️</span>
+                            <h3>Design &amp; Utilities</h3>
+                        </div>
+                        <p class="resource-card-desc">Essential tools for design, API testing, and demo day.</p>
+                        <div class="resource-links">
+                            <a href="https://figma.com" target="_blank" rel="noopener noreferrer" class="resource-link">Figma</a>
+                            <a href="https://excalidraw.com" target="_blank" rel="noopener noreferrer" class="resource-link">Excalidraw</a>
+                            <a href="https://postman.com" target="_blank" rel="noopener noreferrer" class="resource-link">Postman</a>
+                            <a href="https://ngrok.com" target="_blank" rel="noopener noreferrer" class="resource-link">ngrok</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VII. Judging -->
+        <section id="judging" class="py-section bg-alt">
+            <div class="container section-fade">
+                <h2 class="section-title">JUDGING</h2>
+                <p class="section-desc">What to expect on Sunday at 3:00 PM — here's exactly how the judging expo will work so you can prepare your pitches.</p>
+
+                <div class="judging-format">
+                    <div class="squad-intro">
+                        <h3>The 4-Squad System</h3>
+                        <p>You will stay at your team's table, and the judges will come to you. You will be visited by <strong>four different squads</strong> of true experts:</p>
+                        <div class="squad-grid">
+                            <div class="squad-card squad-tech"><span>💻</span> Tech Squad A</div>
+                            <div class="squad-card squad-tech"><span>💻</span> Tech Squad B</div>
+                            <div class="squad-card squad-design"><span>🎨</span> Creative Design Squad</div>
+                            <div class="squad-card squad-biz"><span>📈</span> Business Strategy Squad</div>
+                        </div>
+                        <p class="squad-note">Your final Tech score is the <strong>average</strong> of both Tech Squad visits.</p>
+                    </div>
+
+                    <div class="drill-card">
+                        <h3>The 10-Minute Drill</h3>
+                        <p>Every time a squad visits your table, you have exactly <strong>10 minutes</strong>:</p>
+                        <div class="drill-steps">
+                            <div class="drill-step">
+                                <span class="drill-time">3 MIN</span>
+                                <span class="drill-desc">Give your core pitch &amp; demo</span>
+                            </div>
+                            <div class="drill-step">
+                                <span class="drill-time">5 MIN</span>
+                                <span class="drill-desc">Q&amp;A — tailor your answers to the squad at your table</span>
+                            </div>
+                            <div class="drill-step">
+                                <span class="drill-time">2 MIN</span>
+                                <span class="drill-desc">The squad scores your project and moves on</span>
+                            </div>
+                        </div>
+                        <p class="drill-note">You will pitch 4 separate times. Drink some water, hype each other up, and treat the 4th pitch with as much energy as the 1st.</p>
+                    </div>
+                </div>
+
+                <!-- Rubric Tabs -->
+                <h3 class="rubric-heading">THE RUBRICS</h3>
+                <div class="rubric-tabs">
+                    <div class="tab-nav">
+                        <button class="tab-label active" data-tab="csc">💻 Computer Science</button>
+                        <button class="tab-label" data-tab="design">🎨 Design</button>
+                        <button class="tab-label" data-tab="biz">📈 Business</button>
+                    </div>
+
+                    <div class="tab-panel active" id="panel-csc">
+                        <div class="table-scroll">
+                            <table class="rubric-table">
+                                <thead>
+                                    <tr>
+                                        <th>Metric</th>
+                                        <th>Exceptional (17–20)</th>
+                                        <th>Proficient (11–16)</th>
+                                        <th>Developing (0–10)</th>
+                                        <th>Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Architecture</td><td>Clean, modular, documented.</td><td>Organized but minimal docs.</td><td>Spaghetti code/hardcoded.</td><td class="score-col">/20</td></tr>
+                                    <tr><td>Complexity</td><td>Advanced algorithms/logic.</td><td>Solid basic logic.</td><td>Trivial/very simple.</td><td class="score-col">/20</td></tr>
+                                    <tr><td>Integration</td><td>Seamless API/Engine use.</td><td>Basic usage of tools.</td><td>No external integration.</td><td class="score-col">/20</td></tr>
+                                    <tr><td>Performance</td><td>Optimized, 60+ FPS.</td><td>Stable but minor lag.</td><td>Significant performance issues.</td><td class="score-col">/20</td></tr>
+                                    <tr><td>Stability</td><td>Zero bugs during demo.</td><td>Minor UI bugs only.</td><td>Crashed or failed demo.</td><td class="score-col">/20</td></tr>
+                                    <tr class="total-row"><td colspan="4">TOTAL</td><td class="score-col">/100</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="panel-design">
+                        <div class="table-scroll">
+                            <table class="rubric-table">
+                                <thead>
+                                    <tr>
+                                        <th>Metric</th>
+                                        <th>Exceptional (17–20)</th>
+                                        <th>Proficient (11–16)</th>
+                                        <th>Developing (0–10)</th>
+                                        <th>Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Cohesion</td><td>All elements feel unified, intentional, and professionally aligned.</td><td>Mostly cohesive with minor inconsistencies.</td><td>Disjointed aesthetic; unclear design direction.</td><td class="score-col">/20</td></tr>
+                                    <tr><td>Innovation</td><td>Fresh, clever, unique approaches; strong creative problem-solving.</td><td>Moderate creativity; builds on known patterns.</td><td>Conventional or uninspired; limited originality.</td><td class="score-col">/20</td></tr>
+                                    <tr><td>Implementation Quality</td><td>High-quality, polished components (visuals, interactions, audio).</td><td>Functional and generally clean, lacking refinement.</td><td>Rough, placeholder, or inconsistent assets.</td><td class="score-col">/20</td></tr>
+                                    <tr><td>Feedback &amp; Responsiveness</td><td>Interactions feel smooth, responsive, and satisfying.</td><td>Responsiveness acceptable but may feel flat.</td><td>Lacks responsiveness or clarity; feels dull.</td><td class="score-col">/20</td></tr>
+                                    <tr><td>Usability (UI/UX)</td><td>Intuitive, accessible; users understand with no guidance.</td><td>Generally usable with minor confusion points.</td><td>Hard to navigate; unclear interaction flows.</td><td class="score-col">/20</td></tr>
+                                    <tr class="total-row"><td colspan="4">TOTAL</td><td class="score-col">/100</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="panel-biz">
+                        <div class="table-scroll">
+                            <table class="rubric-table">
+                                <thead>
+                                    <tr>
+                                        <th>Metric</th>
+                                        <th>Exceptional (17–20)</th>
+                                        <th>Proficient (11–16)</th>
+                                        <th>Developing (0–10)</th>
+                                        <th>Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Business Model Design</td><td>Clear value creation and delivery model.</td><td>Basic model with some clarity.</td><td>No clear business model.</td><td class="score-col">/20</td></tr>
+                                    <tr><td>Revenue Model</td><td>Scalable revenue streams, strong pricing.</td><td>Revenue idea but limited clarity.</td><td>No viable monetization approach.</td><td class="score-col">/20</td></tr>
+                                    <tr><td>Market Fit</td><td>Clear problem, defined target market.</td><td>Problem identified, weak validation.</td><td>Unclear problem or target users.</td><td class="score-col">/20</td></tr>
+                                    <tr><td>Marketing Strategy</td><td>Clear go-to-market and channels.</td><td>Basic marketing plan outlined.</td><td>No customer acquisition strategy.</td><td class="score-col">/20</td></tr>
+                                    <tr><td>Inclusivity</td><td>Accessible, inclusive solution design.</td><td>Some accessibility considerations.</td><td>Limited accessibility or inclusion.</td><td class="score-col">/20</td></tr>
+                                    <tr class="total-row"><td colspan="4">TOTAL</td><td class="score-col">/100</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIII. Prizes -->
         <section id="prizes" class="py-section bg-alt">
             <div class="container section-fade">
                 <h2 class="section-title">PRIZES</h2>

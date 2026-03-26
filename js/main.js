@@ -116,4 +116,41 @@ document.addEventListener("DOMContentLoaded", () => {
     // Start typewriter
     setTimeout(type, 1000);
 
+    // 5. Rubric Tab Switcher
+    const tabLabels = document.querySelectorAll('.tab-label');
+    tabLabels.forEach(label => {
+        label.addEventListener('click', () => {
+            const target = label.dataset.tab;
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab-label').forEach(l => l.classList.remove('active'));
+            document.getElementById('panel-' + target).classList.add('active');
+            label.classList.add('active');
+        });
+    });
+
+    // 6. Challenges Time-Lock Reveal
+    const REVEAL_TIME = new Date('2026-03-27T17:45:00');
+    const lockedEl = document.getElementById('challenges-locked');
+    const contentEl = document.getElementById('challenges-content');
+    const countdownEl = document.getElementById('lock-countdown');
+
+    function pad(n) { return String(n).padStart(2, '0'); }
+
+    function updateReveal() {
+        const now = new Date();
+        if (now >= REVEAL_TIME) {
+            if (lockedEl) lockedEl.style.display = 'none';
+            if (contentEl) contentEl.style.display = 'block';
+            return;
+        }
+        const diff = REVEAL_TIME - now;
+        const h = Math.floor(diff / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+        if (countdownEl) countdownEl.textContent = pad(h) + ' : ' + pad(m) + ' : ' + pad(s);
+    }
+
+    updateReveal();
+    setInterval(updateReveal, 1000);
+
 });
